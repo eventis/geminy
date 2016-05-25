@@ -1,3 +1,5 @@
 #! /usr/bin/bash
 
-echo "Init repo"
+GREP="grep";
+KERNEL=`uname -r`;
+
