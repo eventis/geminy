@@ -1,0 +1,7 @@
+#! /usr/bin/bash
+
+#Remove docker images
+
+for image in $( docker images -q ); do
+docker rmi $image;
+done

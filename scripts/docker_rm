@@ -1,0 +1,8 @@
+#! /usr/bin/bash
+
+# Remove dock containers
+
+for image in $( docker ps -a -q ); do
+docker stop $image;
+docker rm $image;
+done
